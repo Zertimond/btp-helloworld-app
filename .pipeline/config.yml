@@ -2,14 +2,14 @@
 general:
   buildTool: "mta"
 service:
-  buildToolVersion: "MBTJ11N18"
+  buildToolVersion: "MBTJ21N20"
   stages:
     Release:
       cfCredentialsId: "deployonbtp"
 stages:
   Build:
-    source: helloworldui5
     mavenExecuteStaticCodeChecks: false
+    source: helloworldui5
     npmExecuteLint: false
   Acceptance:
     cloudFoundryDeploy: false
